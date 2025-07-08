@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>xemu perf tester results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+</head>
+<body>
+<h1>xemu perf tester results</h1>
+<div id="charts-container"></div>
+
+<footer>
+    <div class="controls-container">
+        <div class="control-item">
+            <label for="slice-selector">View charts by:</label>
+            <select id="slice-selector"></select>
+        </div>
+        <div class="control-item">
+            <input type="checkbox" id="outlier-checkbox">
+            <label for="outlier-checkbox">Exclude max outlier</label>
+        </div>
+        <div class="control-item">
+            <div class="search-container">
+                <input type="search" id="search-box"
+                       placeholder="Filter by test name...">
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="fullscreen-overlay">
+    <div id="fullscreen-chart"></div>
+    <button id="close-fullscreen">&times; Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
